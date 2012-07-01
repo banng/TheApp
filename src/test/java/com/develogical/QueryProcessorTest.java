@@ -25,4 +25,10 @@ public class QueryProcessorTest {
     	String query = "what is 3 plus 14";
     	assertThat(queryProcessor.process(query), containsString("17"));
     }
+    
+    @Test
+    public void shouldMultTwoNumbers() throws Exception {
+    	String query = "what is 3 multiplied by 14";
+    	assertThat(queryProcessor.process(query), containsString("42"));
+    }
 }
