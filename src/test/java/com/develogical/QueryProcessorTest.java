@@ -19,4 +19,10 @@ public class QueryProcessorTest {
     public void knowsAboutSpa() throws Exception {
         assertThat(queryProcessor.process("SPA2012"), containsString("conference"));
     }
+    
+    @Test
+    public void shouldAddTwoNumbers() throws Exception {
+    	String query = "what is 3 plus 14";
+    	assertThat(queryProcessor.process(query), containsString("17"));
+    }
 }
