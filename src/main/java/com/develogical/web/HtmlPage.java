@@ -18,6 +18,7 @@ public abstract class HtmlPage {
         writer.println("<html>");
         writer.println("<head></head>");
         writer.println("<body>");
+        writer.println("<h1>A fine app from Gordon and Immo</h1>");
     }
 
     private void writeFooterTo(PrintWriter writer) {
