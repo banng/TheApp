@@ -7,9 +7,9 @@ public class QueryProcessor {
             return "SPA is a jolly conference run by the eponymous BCS specialist group";
         } else if (query.toUpperCase().contains("BCS")){
         	return "BCS is the British Computer Society";
-        } else if (query.toLowerCase().matches("what is \\d+ plus \\d+")) {
+        } else if (query.toLowerCase().matches(".*what is \\d+ plus \\d+.*")) {
         	return addNumbers(query);
-        } else if (query.toLowerCase().matches("what is \\d+ multiplied by \\d+")) {
+        } else if (query.toLowerCase().matches(".*what is \\d+ multiplied by \\d+.*")) {
         	return multNumbers(query);
         }
 
